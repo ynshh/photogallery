@@ -2,45 +2,37 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width">
   <title>Photo Gallery</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/viewer.css">
-  <link rel="stylesheet" href="css/main.css">
+  <style>
+  [v-cloak] { display: none;} 
+  
+  #images{
+    width: 880px ;
+    margin: 10px auto;
+  }
+  img{
+    margin: 10px;
+  }
+ h1, p{
+   text-align: center;
+ }
+
+  </style>
 </head>
 
 <body>
-  <header class="navbar navbar-light navbar-expand-md">
-    <div class="container">
-      <h1>Photo Gallery</h1>
-    </div>
-  </header>
+  <h1>Photo Gallery</h1>
+  
+  <div id="images">
 
-  <!-- Content -->
-  <div class="container">
-    <hr>
-    <div class="row">
-      <div class="docs-galley">
-        <div id="images" class="docs-pictures clearfix">
-          <img v-repeat="photos" v-attr="data-original: imagePath, src: imagePath, alt: imageAlt" width="300px" height="auto">
-        </div>
-      </div>
-    </div>
+  <img v-repeat="products" v-attr="src: imagePath, alt: imageAlt" width="200px" height=auto >
   </div>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <p class="heart"></p>
-      <p><small>(c) 2018 Yuna Shigehra</small></p>
-    </div>
-  </footer>
-
-  <!-- Scripts -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-  <script src="js/viewer.js"></script>
   <script src="js/vue.js"></script>
-  <script src="js/app.js"></script>
+  <script src="app.js"></script>
+  <footer>
+    <p><small>(c) 2018 Yuna Shigehara</small></p>
+  </footer>
 </body>
 </html>
