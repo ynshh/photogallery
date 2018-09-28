@@ -11,10 +11,5 @@ var vm = new Vue({
       { imagePath: 'img/006.jpg',  imageAlt: 'アメリカのSTOPの標識' },
       { imagePath: 'img/007.jpg',  imageAlt: 'ロサンゼルスにあるLACMAの美術館前' }
     ]
-  },
-  methods: {
-    say: function(imageAlt) {
-      alert(imageAlt) 
-    }
   }
 });
